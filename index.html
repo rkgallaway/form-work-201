@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dorking around with Forms</title>
+    <link href="css/reset.css"  type="text/css" rel="stylesheet" />  
+    <link href="css/style.css"  type="text/css" rel="stylesheet" />  
+  </head>
+
+  <body>
+    <header>
+      <h1>Dorking around with Forms</h1>
+
+      <!-- this is the form with all of the pieces -->
+      <form id="the-form">
+        <fieldset>
+          <legend>Dorky Form</legend>
+
+          <!-- notice that the label element has a 'for' attribute found in the opening tag which corresponds to the name attribute of the input element.  that name attribute is found in the opening tag of the input element  -->
+          <label for="username">User Name:</label>
+          <input name="username" type="text" size="30" placeholder="user name" required />
+
+          <label for="worktitle">Title:</label>
+          <input name="worktitle" type="text" size="30" placeholder="title" required />
+
+
+          <label for="sometext">User Name:</label>
+          <textarea name="sometext" type="text" placeholder="enter text here"></textarea>
+
+
+          <button type="submit">Save</button>
+        </fieldset>
+      </form>
+
+
+
+    </header>
+    <script src="js/app.js"></script>
+  </body>
+</html>
